@@ -11786,7 +11786,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11817,7 +11817,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">view_sentence_range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
@@ -11904,7 +11904,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -11978,7 +11978,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">token_lookup</span><span class="p">():</span>
@@ -12041,7 +12041,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12068,7 +12068,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12106,7 +12106,7 @@ Barney_Gumble: Yeah, you should only drink to enhance your social skills.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12167,7 +12167,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_inputs</span><span class="p">():</span>
@@ -12229,7 +12229,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_init_cell</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">rnn_size</span><span class="p">):</span>
@@ -12240,7 +12240,7 @@ Default GPU Device: /gpu:0
 <span class="sd">    :return: Tuple (cell, initialize state)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
-    <span class="n">lstm_layers</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">lstm_layers</span> <span class="o">=</span> <span class="mi">2</span>
     <span class="n">lstm</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">BasicLSTMCell</span><span class="p">(</span><span class="n">rnn_size</span><span class="p">)</span>
     <span class="n">cell</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">rnn</span><span class="o">.</span><span class="n">MultiRNNCell</span><span class="p">([</span><span class="n">lstm</span><span class="p">]</span> <span class="o">*</span> <span class="n">lstm_layers</span><span class="p">)</span>
     <span class="n">initial_state</span> <span class="o">=</span> <span class="n">cell</span><span class="o">.</span><span class="n">zero_state</span><span class="p">(</span><span class="n">batch_size</span><span class="p">,</span> <span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">)</span>
@@ -12286,7 +12286,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_embed</span><span class="p">(</span><span class="n">input_data</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">):</span>
@@ -12348,7 +12348,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_rnn</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">inputs</span><span class="p">):</span>
@@ -12408,7 +12408,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">build_nn</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">rnn_size</span><span class="p">,</span> <span class="n">input_data</span><span class="p">,</span> <span class="n">vocab_size</span><span class="p">,</span> <span class="n">embed_dim</span><span class="p">):</span>
@@ -12426,7 +12426,8 @@ Default GPU Device: /gpu:0
     <span class="n">outputs</span><span class="p">,</span> <span class="n">final_state</span> <span class="o">=</span> <span class="n">build_rnn</span><span class="p">(</span><span class="n">cell</span><span class="p">,</span> <span class="n">embed</span><span class="p">)</span>
     <span class="n">logits</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">fully_connected</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span>
                                                <span class="n">vocab_size</span><span class="p">,</span>
-                                              <span class="n">weights_initializer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">truncated_normal_initializer</span><span class="p">(</span><span class="n">stddev</span><span class="o">=</span><span class="mf">0.1</span><span class="p">))</span>
+                                               <span class="n">activation_fn</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+                                              <span class="n">weights_initializer</span><span class="o">=</span><span class="n">tf</span><span class="o">.</span><span class="n">contrib</span><span class="o">.</span><span class="n">layers</span><span class="o">.</span><span class="n">xavier_initializer</span><span class="p">(</span><span class="n">uniform</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
     <span class="k">return</span> <span class="n">logits</span><span class="p">,</span> <span class="n">final_state</span>
 
 
@@ -12502,7 +12503,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_batches</span><span class="p">(</span><span class="n">int_text</span><span class="p">,</span> <span class="n">batch_size</span><span class="p">,</span> <span class="n">seq_length</span><span class="p">):</span>
@@ -12579,11 +12580,11 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Number of Epochs</span>
-<span class="n">num_epochs</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">num_epochs</span> <span class="o">=</span> <span class="mi">128</span>
 <span class="c1"># Batch Size</span>
 <span class="n">batch_size</span> <span class="o">=</span> <span class="mi">256</span>
 <span class="c1"># RNN Size</span>
@@ -12620,7 +12621,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12671,7 +12672,7 @@ Default GPU Device: /gpu:0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12720,265 +12721,338 @@ Default GPU Device: /gpu:0
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Epoch   0 Batch    0/26   train_loss = 8.822
-Epoch   0 Batch   10/26   train_loss = 6.349
-Epoch   0 Batch   20/26   train_loss = 6.090
-Epoch   1 Batch    4/26   train_loss = 5.674
-Epoch   1 Batch   14/26   train_loss = 5.615
-Epoch   1 Batch   24/26   train_loss = 5.396
-Epoch   2 Batch    8/26   train_loss = 5.198
-Epoch   2 Batch   18/26   train_loss = 5.180
-Epoch   3 Batch    2/26   train_loss = 5.151
-Epoch   3 Batch   12/26   train_loss = 5.084
-Epoch   3 Batch   22/26   train_loss = 4.913
-Epoch   4 Batch    6/26   train_loss = 5.009
-Epoch   4 Batch   16/26   train_loss = 4.828
-Epoch   5 Batch    0/26   train_loss = 4.780
-Epoch   5 Batch   10/26   train_loss = 4.600
-Epoch   5 Batch   20/26   train_loss = 4.724
-Epoch   6 Batch    4/26   train_loss = 4.596
-Epoch   6 Batch   14/26   train_loss = 4.703
-Epoch   6 Batch   24/26   train_loss = 4.605
-Epoch   7 Batch    8/26   train_loss = 4.507
-Epoch   7 Batch   18/26   train_loss = 4.551
-Epoch   8 Batch    2/26   train_loss = 4.594
-Epoch   8 Batch   12/26   train_loss = 4.573
-Epoch   8 Batch   22/26   train_loss = 4.390
-Epoch   9 Batch    6/26   train_loss = 4.572
-Epoch   9 Batch   16/26   train_loss = 4.421
-Epoch  10 Batch    0/26   train_loss = 4.333
-Epoch  10 Batch   10/26   train_loss = 4.230
-Epoch  10 Batch   20/26   train_loss = 4.343
-Epoch  11 Batch    4/26   train_loss = 4.236
-Epoch  11 Batch   14/26   train_loss = 4.338
-Epoch  11 Batch   24/26   train_loss = 4.222
-Epoch  12 Batch    8/26   train_loss = 4.164
-Epoch  12 Batch   18/26   train_loss = 4.221
-Epoch  13 Batch    2/26   train_loss = 4.256
-Epoch  13 Batch   12/26   train_loss = 4.223
-Epoch  13 Batch   22/26   train_loss = 4.073
-Epoch  14 Batch    6/26   train_loss = 4.226
-Epoch  14 Batch   16/26   train_loss = 4.093
-Epoch  15 Batch    0/26   train_loss = 3.970
-Epoch  15 Batch   10/26   train_loss = 3.893
-Epoch  15 Batch   20/26   train_loss = 3.986
-Epoch  16 Batch    4/26   train_loss = 3.902
-Epoch  16 Batch   14/26   train_loss = 4.003
-Epoch  16 Batch   24/26   train_loss = 3.890
-Epoch  17 Batch    8/26   train_loss = 3.868
-Epoch  17 Batch   18/26   train_loss = 3.888
-Epoch  18 Batch    2/26   train_loss = 3.924
-Epoch  18 Batch   12/26   train_loss = 3.903
-Epoch  18 Batch   22/26   train_loss = 3.728
-Epoch  19 Batch    6/26   train_loss = 3.907
-Epoch  19 Batch   16/26   train_loss = 3.783
-Epoch  20 Batch    0/26   train_loss = 3.638
-Epoch  20 Batch   10/26   train_loss = 3.612
-Epoch  20 Batch   20/26   train_loss = 3.674
-Epoch  21 Batch    4/26   train_loss = 3.638
-Epoch  21 Batch   14/26   train_loss = 3.726
-Epoch  21 Batch   24/26   train_loss = 3.604
-Epoch  22 Batch    8/26   train_loss = 3.620
-Epoch  22 Batch   18/26   train_loss = 3.623
-Epoch  23 Batch    2/26   train_loss = 3.612
-Epoch  23 Batch   12/26   train_loss = 3.611
-Epoch  23 Batch   22/26   train_loss = 3.468
-Epoch  24 Batch    6/26   train_loss = 3.627
-Epoch  24 Batch   16/26   train_loss = 3.540
-Epoch  25 Batch    0/26   train_loss = 3.369
-Epoch  25 Batch   10/26   train_loss = 3.367
-Epoch  25 Batch   20/26   train_loss = 3.411
-Epoch  26 Batch    4/26   train_loss = 3.338
-Epoch  26 Batch   14/26   train_loss = 3.477
-Epoch  26 Batch   24/26   train_loss = 3.332
-Epoch  27 Batch    8/26   train_loss = 3.371
-Epoch  27 Batch   18/26   train_loss = 3.399
-Epoch  28 Batch    2/26   train_loss = 3.379
-Epoch  28 Batch   12/26   train_loss = 3.423
-Epoch  28 Batch   22/26   train_loss = 3.255
-Epoch  29 Batch    6/26   train_loss = 3.457
-Epoch  29 Batch   16/26   train_loss = 3.369
-Epoch  30 Batch    0/26   train_loss = 3.200
-Epoch  30 Batch   10/26   train_loss = 3.188
-Epoch  30 Batch   20/26   train_loss = 3.303
-Epoch  31 Batch    4/26   train_loss = 3.198
-Epoch  31 Batch   14/26   train_loss = 3.372
-Epoch  31 Batch   24/26   train_loss = 3.226
-Epoch  32 Batch    8/26   train_loss = 3.220
-Epoch  32 Batch   18/26   train_loss = 3.269
-Epoch  33 Batch    2/26   train_loss = 3.233
-Epoch  33 Batch   12/26   train_loss = 3.262
-Epoch  33 Batch   22/26   train_loss = 3.139
-Epoch  34 Batch    6/26   train_loss = 3.309
-Epoch  34 Batch   16/26   train_loss = 3.232
-Epoch  35 Batch    0/26   train_loss = 3.055
-Epoch  35 Batch   10/26   train_loss = 3.045
-Epoch  35 Batch   20/26   train_loss = 3.150
-Epoch  36 Batch    4/26   train_loss = 3.039
-Epoch  36 Batch   14/26   train_loss = 3.237
-Epoch  36 Batch   24/26   train_loss = 3.069
-Epoch  37 Batch    8/26   train_loss = 3.099
-Epoch  37 Batch   18/26   train_loss = 3.149
-Epoch  38 Batch    2/26   train_loss = 3.077
-Epoch  38 Batch   12/26   train_loss = 3.151
-Epoch  38 Batch   22/26   train_loss = 3.040
-Epoch  39 Batch    6/26   train_loss = 3.181
-Epoch  39 Batch   16/26   train_loss = 3.101
-Epoch  40 Batch    0/26   train_loss = 2.943
-Epoch  40 Batch   10/26   train_loss = 2.912
-Epoch  40 Batch   20/26   train_loss = 3.056
-Epoch  41 Batch    4/26   train_loss = 2.931
-Epoch  41 Batch   14/26   train_loss = 3.123
-Epoch  41 Batch   24/26   train_loss = 2.972
-Epoch  42 Batch    8/26   train_loss = 2.995
-Epoch  42 Batch   18/26   train_loss = 3.048
-Epoch  43 Batch    2/26   train_loss = 2.987
-Epoch  43 Batch   12/26   train_loss = 3.052
-Epoch  43 Batch   22/26   train_loss = 2.917
-Epoch  44 Batch    6/26   train_loss = 3.089
-Epoch  44 Batch   16/26   train_loss = 3.011
-Epoch  45 Batch    0/26   train_loss = 2.837
-Epoch  45 Batch   10/26   train_loss = 2.828
-Epoch  45 Batch   20/26   train_loss = 2.970
-Epoch  46 Batch    4/26   train_loss = 2.802
-Epoch  46 Batch   14/26   train_loss = 3.045
-Epoch  46 Batch   24/26   train_loss = 2.899
-Epoch  47 Batch    8/26   train_loss = 2.905
-Epoch  47 Batch   18/26   train_loss = 2.969
-Epoch  48 Batch    2/26   train_loss = 2.907
-Epoch  48 Batch   12/26   train_loss = 2.992
-Epoch  48 Batch   22/26   train_loss = 2.843
-Epoch  49 Batch    6/26   train_loss = 3.034
-Epoch  49 Batch   16/26   train_loss = 2.944
-Epoch  50 Batch    0/26   train_loss = 2.772
-Epoch  50 Batch   10/26   train_loss = 2.770
-Epoch  50 Batch   20/26   train_loss = 2.914
-Epoch  51 Batch    4/26   train_loss = 2.764
-Epoch  51 Batch   14/26   train_loss = 3.004
-Epoch  51 Batch   24/26   train_loss = 2.840
-Epoch  52 Batch    8/26   train_loss = 2.871
-Epoch  52 Batch   18/26   train_loss = 2.920
-Epoch  53 Batch    2/26   train_loss = 2.864
-Epoch  53 Batch   12/26   train_loss = 2.944
-Epoch  53 Batch   22/26   train_loss = 2.804
-Epoch  54 Batch    6/26   train_loss = 2.973
-Epoch  54 Batch   16/26   train_loss = 2.903
-Epoch  55 Batch    0/26   train_loss = 2.744
-Epoch  55 Batch   10/26   train_loss = 2.697
-Epoch  55 Batch   20/26   train_loss = 2.877
-Epoch  56 Batch    4/26   train_loss = 2.732
-Epoch  56 Batch   14/26   train_loss = 2.958
-Epoch  56 Batch   24/26   train_loss = 2.814
-Epoch  57 Batch    8/26   train_loss = 2.835
-Epoch  57 Batch   18/26   train_loss = 2.886
-Epoch  58 Batch    2/26   train_loss = 2.837
-Epoch  58 Batch   12/26   train_loss = 2.916
-Epoch  58 Batch   22/26   train_loss = 2.778
-Epoch  59 Batch    6/26   train_loss = 2.956
-Epoch  59 Batch   16/26   train_loss = 2.857
-Epoch  60 Batch    0/26   train_loss = 2.712
-Epoch  60 Batch   10/26   train_loss = 2.671
-Epoch  60 Batch   20/26   train_loss = 2.870
-Epoch  61 Batch    4/26   train_loss = 2.694
-Epoch  61 Batch   14/26   train_loss = 2.939
-Epoch  61 Batch   24/26   train_loss = 2.797
-Epoch  62 Batch    8/26   train_loss = 2.809
-Epoch  62 Batch   18/26   train_loss = 2.884
-Epoch  63 Batch    2/26   train_loss = 2.829
-Epoch  63 Batch   12/26   train_loss = 2.890
-Epoch  63 Batch   22/26   train_loss = 2.770
-Epoch  64 Batch    6/26   train_loss = 2.949
-Epoch  64 Batch   16/26   train_loss = 2.863
-Epoch  65 Batch    0/26   train_loss = 2.725
-Epoch  65 Batch   10/26   train_loss = 2.676
-Epoch  65 Batch   20/26   train_loss = 2.865
-Epoch  66 Batch    4/26   train_loss = 2.696
-Epoch  66 Batch   14/26   train_loss = 2.950
-Epoch  66 Batch   24/26   train_loss = 2.805
-Epoch  67 Batch    8/26   train_loss = 2.803
-Epoch  67 Batch   18/26   train_loss = 2.905
-Epoch  68 Batch    2/26   train_loss = 2.837
-Epoch  68 Batch   12/26   train_loss = 2.900
-Epoch  68 Batch   22/26   train_loss = 2.785
-Epoch  69 Batch    6/26   train_loss = 2.975
-Epoch  69 Batch   16/26   train_loss = 2.887
-Epoch  70 Batch    0/26   train_loss = 2.740
-Epoch  70 Batch   10/26   train_loss = 2.690
-Epoch  70 Batch   20/26   train_loss = 2.889
-Epoch  71 Batch    4/26   train_loss = 2.706
-Epoch  71 Batch   14/26   train_loss = 2.945
-Epoch  71 Batch   24/26   train_loss = 2.801
-Epoch  72 Batch    8/26   train_loss = 2.813
-Epoch  72 Batch   18/26   train_loss = 2.866
-Epoch  73 Batch    2/26   train_loss = 2.832
-Epoch  73 Batch   12/26   train_loss = 2.891
-Epoch  73 Batch   22/26   train_loss = 2.740
-Epoch  74 Batch    6/26   train_loss = 2.934
-Epoch  74 Batch   16/26   train_loss = 2.820
-Epoch  75 Batch    0/26   train_loss = 2.676
-Epoch  75 Batch   10/26   train_loss = 2.638
-Epoch  75 Batch   20/26   train_loss = 2.836
-Epoch  76 Batch    4/26   train_loss = 2.651
-Epoch  76 Batch   14/26   train_loss = 2.897
-Epoch  76 Batch   24/26   train_loss = 2.748
-Epoch  77 Batch    8/26   train_loss = 2.756
-Epoch  77 Batch   18/26   train_loss = 2.815
-Epoch  78 Batch    2/26   train_loss = 2.771
-Epoch  78 Batch   12/26   train_loss = 2.852
-Epoch  78 Batch   22/26   train_loss = 2.706
-Epoch  79 Batch    6/26   train_loss = 2.892
-Epoch  79 Batch   16/26   train_loss = 2.800
-Epoch  80 Batch    0/26   train_loss = 2.648
-Epoch  80 Batch   10/26   train_loss = 2.610
-Epoch  80 Batch   20/26   train_loss = 2.811
-Epoch  81 Batch    4/26   train_loss = 2.637
-Epoch  81 Batch   14/26   train_loss = 2.885
-Epoch  81 Batch   24/26   train_loss = 2.729
-Epoch  82 Batch    8/26   train_loss = 2.742
-Epoch  82 Batch   18/26   train_loss = 2.797
-Epoch  83 Batch    2/26   train_loss = 2.764
-Epoch  83 Batch   12/26   train_loss = 2.840
-Epoch  83 Batch   22/26   train_loss = 2.691
-Epoch  84 Batch    6/26   train_loss = 2.866
-Epoch  84 Batch   16/26   train_loss = 2.791
-Epoch  85 Batch    0/26   train_loss = 2.634
-Epoch  85 Batch   10/26   train_loss = 2.581
-Epoch  85 Batch   20/26   train_loss = 2.799
-Epoch  86 Batch    4/26   train_loss = 2.619
-Epoch  86 Batch   14/26   train_loss = 2.865
-Epoch  86 Batch   24/26   train_loss = 2.702
-Epoch  87 Batch    8/26   train_loss = 2.716
-Epoch  87 Batch   18/26   train_loss = 2.791
-Epoch  88 Batch    2/26   train_loss = 2.739
-Epoch  88 Batch   12/26   train_loss = 2.814
-Epoch  88 Batch   22/26   train_loss = 2.677
-Epoch  89 Batch    6/26   train_loss = 2.845
-Epoch  89 Batch   16/26   train_loss = 2.766
-Epoch  90 Batch    0/26   train_loss = 2.614
-Epoch  90 Batch   10/26   train_loss = 2.571
-Epoch  90 Batch   20/26   train_loss = 2.769
-Epoch  91 Batch    4/26   train_loss = 2.601
-Epoch  91 Batch   14/26   train_loss = 2.842
-Epoch  91 Batch   24/26   train_loss = 2.680
-Epoch  92 Batch    8/26   train_loss = 2.693
-Epoch  92 Batch   18/26   train_loss = 2.771
-Epoch  93 Batch    2/26   train_loss = 2.721
-Epoch  93 Batch   12/26   train_loss = 2.793
-Epoch  93 Batch   22/26   train_loss = 2.650
-Epoch  94 Batch    6/26   train_loss = 2.828
-Epoch  94 Batch   16/26   train_loss = 2.742
-Epoch  95 Batch    0/26   train_loss = 2.599
-Epoch  95 Batch   10/26   train_loss = 2.546
-Epoch  95 Batch   20/26   train_loss = 2.752
-Epoch  96 Batch    4/26   train_loss = 2.582
-Epoch  96 Batch   14/26   train_loss = 2.829
-Epoch  96 Batch   24/26   train_loss = 2.668
-Epoch  97 Batch    8/26   train_loss = 2.677
-Epoch  97 Batch   18/26   train_loss = 2.756
-Epoch  98 Batch    2/26   train_loss = 2.705
-Epoch  98 Batch   12/26   train_loss = 2.782
-Epoch  98 Batch   22/26   train_loss = 2.638
-Epoch  99 Batch    6/26   train_loss = 2.817
-Epoch  99 Batch   16/26   train_loss = 2.732
+Epoch   0 Batch   10/26   train_loss = 6.397
+Epoch   0 Batch   20/26   train_loss = 6.039
+Epoch   1 Batch    4/26   train_loss = 5.600
+Epoch   1 Batch   14/26   train_loss = 5.556
+Epoch   1 Batch   24/26   train_loss = 5.378
+Epoch   2 Batch    8/26   train_loss = 5.223
+Epoch   2 Batch   18/26   train_loss = 5.191
+Epoch   3 Batch    2/26   train_loss = 5.146
+Epoch   3 Batch   12/26   train_loss = 5.093
+Epoch   3 Batch   22/26   train_loss = 4.951
+Epoch   4 Batch    6/26   train_loss = 5.013
+Epoch   4 Batch   16/26   train_loss = 4.820
+Epoch   5 Batch    0/26   train_loss = 4.799
+Epoch   5 Batch   10/26   train_loss = 4.620
+Epoch   5 Batch   20/26   train_loss = 4.730
+Epoch   6 Batch    4/26   train_loss = 4.578
+Epoch   6 Batch   14/26   train_loss = 4.679
+Epoch   6 Batch   24/26   train_loss = 4.628
+Epoch   7 Batch    8/26   train_loss = 4.525
+Epoch   7 Batch   18/26   train_loss = 4.541
+Epoch   8 Batch    2/26   train_loss = 4.549
+Epoch   8 Batch   12/26   train_loss = 4.571
+Epoch   8 Batch   22/26   train_loss = 4.418
+Epoch   9 Batch    6/26   train_loss = 4.545
+Epoch   9 Batch   16/26   train_loss = 4.387
+Epoch  10 Batch    0/26   train_loss = 4.317
+Epoch  10 Batch   10/26   train_loss = 4.216
+Epoch  10 Batch   20/26   train_loss = 4.323
+Epoch  11 Batch    4/26   train_loss = 4.219
+Epoch  11 Batch   14/26   train_loss = 4.275
+Epoch  11 Batch   24/26   train_loss = 4.250
+Epoch  12 Batch    8/26   train_loss = 4.156
+Epoch  12 Batch   18/26   train_loss = 4.188
+Epoch  13 Batch    2/26   train_loss = 4.184
+Epoch  13 Batch   12/26   train_loss = 4.183
+Epoch  13 Batch   22/26   train_loss = 4.062
+Epoch  14 Batch    6/26   train_loss = 4.183
+Epoch  14 Batch   16/26   train_loss = 4.063
+Epoch  15 Batch    0/26   train_loss = 3.946
+Epoch  15 Batch   10/26   train_loss = 3.868
+Epoch  15 Batch   20/26   train_loss = 3.952
+Epoch  16 Batch    4/26   train_loss = 3.901
+Epoch  16 Batch   14/26   train_loss = 3.931
+Epoch  16 Batch   24/26   train_loss = 3.885
+Epoch  17 Batch    8/26   train_loss = 3.860
+Epoch  17 Batch   18/26   train_loss = 3.853
+Epoch  18 Batch    2/26   train_loss = 3.819
+Epoch  18 Batch   12/26   train_loss = 3.866
+Epoch  18 Batch   22/26   train_loss = 3.745
+Epoch  19 Batch    6/26   train_loss = 3.859
+Epoch  19 Batch   16/26   train_loss = 3.735
+Epoch  20 Batch    0/26   train_loss = 3.601
+Epoch  20 Batch   10/26   train_loss = 3.564
+Epoch  20 Batch   20/26   train_loss = 3.664
+Epoch  21 Batch    4/26   train_loss = 3.613
+Epoch  21 Batch   14/26   train_loss = 3.693
+Epoch  21 Batch   24/26   train_loss = 3.602
+Epoch  22 Batch    8/26   train_loss = 3.610
+Epoch  22 Batch   18/26   train_loss = 3.594
+Epoch  23 Batch    2/26   train_loss = 3.544
+Epoch  23 Batch   12/26   train_loss = 3.609
+Epoch  23 Batch   22/26   train_loss = 3.477
+Epoch  24 Batch    6/26   train_loss = 3.635
+Epoch  24 Batch   16/26   train_loss = 3.476
+Epoch  25 Batch    0/26   train_loss = 3.393
+Epoch  25 Batch   10/26   train_loss = 3.290
+Epoch  25 Batch   20/26   train_loss = 3.440
+Epoch  26 Batch    4/26   train_loss = 3.380
+Epoch  26 Batch   14/26   train_loss = 3.450
+Epoch  26 Batch   24/26   train_loss = 3.388
+Epoch  27 Batch    8/26   train_loss = 3.360
+Epoch  27 Batch   18/26   train_loss = 3.354
+Epoch  28 Batch    2/26   train_loss = 3.304
+Epoch  28 Batch   12/26   train_loss = 3.382
+Epoch  28 Batch   22/26   train_loss = 3.247
+Epoch  29 Batch    6/26   train_loss = 3.383
+Epoch  29 Batch   16/26   train_loss = 3.235
+Epoch  30 Batch    0/26   train_loss = 3.144
+Epoch  30 Batch   10/26   train_loss = 3.055
+Epoch  30 Batch   20/26   train_loss = 3.207
+Epoch  31 Batch    4/26   train_loss = 3.160
+Epoch  31 Batch   14/26   train_loss = 3.266
+Epoch  31 Batch   24/26   train_loss = 3.173
+Epoch  32 Batch    8/26   train_loss = 3.173
+Epoch  32 Batch   18/26   train_loss = 3.207
+Epoch  33 Batch    2/26   train_loss = 3.106
+Epoch  33 Batch   12/26   train_loss = 3.207
+Epoch  33 Batch   22/26   train_loss = 3.109
+Epoch  34 Batch    6/26   train_loss = 3.260
+Epoch  34 Batch   16/26   train_loss = 3.104
+Epoch  35 Batch    0/26   train_loss = 3.018
+Epoch  35 Batch   10/26   train_loss = 2.921
+Epoch  35 Batch   20/26   train_loss = 3.116
+Epoch  36 Batch    4/26   train_loss = 3.010
+Epoch  36 Batch   14/26   train_loss = 3.143
+Epoch  36 Batch   24/26   train_loss = 3.077
+Epoch  37 Batch    8/26   train_loss = 3.055
+Epoch  37 Batch   18/26   train_loss = 3.083
+Epoch  38 Batch    2/26   train_loss = 2.994
+Epoch  38 Batch   12/26   train_loss = 3.098
+Epoch  38 Batch   22/26   train_loss = 2.996
+Epoch  39 Batch    6/26   train_loss = 3.170
+Epoch  39 Batch   16/26   train_loss = 3.009
+Epoch  40 Batch    0/26   train_loss = 2.905
+Epoch  40 Batch   10/26   train_loss = 2.818
+Epoch  40 Batch   20/26   train_loss = 2.991
+Epoch  41 Batch    4/26   train_loss = 2.905
+Epoch  41 Batch   14/26   train_loss = 3.049
+Epoch  41 Batch   24/26   train_loss = 2.988
+Epoch  42 Batch    8/26   train_loss = 2.952
+Epoch  42 Batch   18/26   train_loss = 3.000
+Epoch  43 Batch    2/26   train_loss = 2.912
+Epoch  43 Batch   12/26   train_loss = 3.005
+Epoch  43 Batch   22/26   train_loss = 2.921
+Epoch  44 Batch    6/26   train_loss = 3.084
+Epoch  44 Batch   16/26   train_loss = 2.920
+Epoch  45 Batch    0/26   train_loss = 2.834
+Epoch  45 Batch   10/26   train_loss = 2.723
+Epoch  45 Batch   20/26   train_loss = 2.934
+Epoch  46 Batch    4/26   train_loss = 2.842
+Epoch  46 Batch   14/26   train_loss = 2.977
+Epoch  46 Batch   24/26   train_loss = 2.919
+Epoch  47 Batch    8/26   train_loss = 2.899
+Epoch  47 Batch   18/26   train_loss = 2.965
+Epoch  48 Batch    2/26   train_loss = 2.859
+Epoch  48 Batch   12/26   train_loss = 2.978
+Epoch  48 Batch   22/26   train_loss = 2.888
+Epoch  49 Batch    6/26   train_loss = 3.044
+Epoch  49 Batch   16/26   train_loss = 2.898
+Epoch  50 Batch    0/26   train_loss = 2.819
+Epoch  50 Batch   10/26   train_loss = 2.700
+Epoch  50 Batch   20/26   train_loss = 2.918
+Epoch  51 Batch    4/26   train_loss = 2.808
+Epoch  51 Batch   14/26   train_loss = 2.954
+Epoch  51 Batch   24/26   train_loss = 2.918
+Epoch  52 Batch    8/26   train_loss = 2.876
+Epoch  52 Batch   18/26   train_loss = 2.931
+Epoch  53 Batch    2/26   train_loss = 2.856
+Epoch  53 Batch   12/26   train_loss = 2.957
+Epoch  53 Batch   22/26   train_loss = 2.844
+Epoch  54 Batch    6/26   train_loss = 3.026
+Epoch  54 Batch   16/26   train_loss = 2.871
+Epoch  55 Batch    0/26   train_loss = 2.779
+Epoch  55 Batch   10/26   train_loss = 2.676
+Epoch  55 Batch   20/26   train_loss = 2.883
+Epoch  56 Batch    4/26   train_loss = 2.772
+Epoch  56 Batch   14/26   train_loss = 2.928
+Epoch  56 Batch   24/26   train_loss = 2.873
+Epoch  57 Batch    8/26   train_loss = 2.839
+Epoch  57 Batch   18/26   train_loss = 2.901
+Epoch  58 Batch    2/26   train_loss = 2.810
+Epoch  58 Batch   12/26   train_loss = 2.912
+Epoch  58 Batch   22/26   train_loss = 2.816
+Epoch  59 Batch    6/26   train_loss = 2.976
+Epoch  59 Batch   16/26   train_loss = 2.816
+Epoch  60 Batch    0/26   train_loss = 2.730
+Epoch  60 Batch   10/26   train_loss = 2.615
+Epoch  60 Batch   20/26   train_loss = 2.829
+Epoch  61 Batch    4/26   train_loss = 2.731
+Epoch  61 Batch   14/26   train_loss = 2.871
+Epoch  61 Batch   24/26   train_loss = 2.821
+Epoch  62 Batch    8/26   train_loss = 2.772
+Epoch  62 Batch   18/26   train_loss = 2.833
+Epoch  63 Batch    2/26   train_loss = 2.757
+Epoch  63 Batch   12/26   train_loss = 2.857
+Epoch  63 Batch   22/26   train_loss = 2.757
+Epoch  64 Batch    6/26   train_loss = 2.925
+Epoch  64 Batch   16/26   train_loss = 2.771
+Epoch  65 Batch    0/26   train_loss = 2.681
+Epoch  65 Batch   10/26   train_loss = 2.568
+Epoch  65 Batch   20/26   train_loss = 2.798
+Epoch  66 Batch    4/26   train_loss = 2.690
+Epoch  66 Batch   14/26   train_loss = 2.844
+Epoch  66 Batch   24/26   train_loss = 2.791
+Epoch  67 Batch    8/26   train_loss = 2.751
+Epoch  67 Batch   18/26   train_loss = 2.804
+Epoch  68 Batch    2/26   train_loss = 2.730
+Epoch  68 Batch   12/26   train_loss = 2.841
+Epoch  68 Batch   22/26   train_loss = 2.739
+Epoch  69 Batch    6/26   train_loss = 2.908
+Epoch  69 Batch   16/26   train_loss = 2.750
+Epoch  70 Batch    0/26   train_loss = 2.665
+Epoch  70 Batch   10/26   train_loss = 2.562
+Epoch  70 Batch   20/26   train_loss = 2.786
+Epoch  71 Batch    4/26   train_loss = 2.679
+Epoch  71 Batch   14/26   train_loss = 2.834
+Epoch  71 Batch   24/26   train_loss = 2.787
+Epoch  72 Batch    8/26   train_loss = 2.748
+Epoch  72 Batch   18/26   train_loss = 2.811
+Epoch  73 Batch    2/26   train_loss = 2.724
+Epoch  73 Batch   12/26   train_loss = 2.834
+Epoch  73 Batch   22/26   train_loss = 2.741
+Epoch  74 Batch    6/26   train_loss = 2.905
+Epoch  74 Batch   16/26   train_loss = 2.744
+Epoch  75 Batch    0/26   train_loss = 2.674
+Epoch  75 Batch   10/26   train_loss = 2.554
+Epoch  75 Batch   20/26   train_loss = 2.781
+Epoch  76 Batch    4/26   train_loss = 2.674
+Epoch  76 Batch   14/26   train_loss = 2.831
+Epoch  76 Batch   24/26   train_loss = 2.781
+Epoch  77 Batch    8/26   train_loss = 2.738
+Epoch  77 Batch   18/26   train_loss = 2.799
+Epoch  78 Batch    2/26   train_loss = 2.720
+Epoch  78 Batch   12/26   train_loss = 2.829
+Epoch  78 Batch   22/26   train_loss = 2.735
+Epoch  79 Batch    6/26   train_loss = 2.902
+Epoch  79 Batch   16/26   train_loss = 2.742
+Epoch  80 Batch    0/26   train_loss = 2.658
+Epoch  80 Batch   10/26   train_loss = 2.546
+Epoch  80 Batch   20/26   train_loss = 2.776
+Epoch  81 Batch    4/26   train_loss = 2.665
+Epoch  81 Batch   14/26   train_loss = 2.824
+Epoch  81 Batch   24/26   train_loss = 2.772
+Epoch  82 Batch    8/26   train_loss = 2.729
+Epoch  82 Batch   18/26   train_loss = 2.787
+Epoch  83 Batch    2/26   train_loss = 2.710
+Epoch  83 Batch   12/26   train_loss = 2.819
+Epoch  83 Batch   22/26   train_loss = 2.718
+Epoch  84 Batch    6/26   train_loss = 2.888
+Epoch  84 Batch   16/26   train_loss = 2.727
+Epoch  85 Batch    0/26   train_loss = 2.647
+Epoch  85 Batch   10/26   train_loss = 2.538
+Epoch  85 Batch   20/26   train_loss = 2.768
+Epoch  86 Batch    4/26   train_loss = 2.658
+Epoch  86 Batch   14/26   train_loss = 2.808
+Epoch  86 Batch   24/26   train_loss = 2.765
+Epoch  87 Batch    8/26   train_loss = 2.720
+Epoch  87 Batch   18/26   train_loss = 2.779
+Epoch  88 Batch    2/26   train_loss = 2.704
+Epoch  88 Batch   12/26   train_loss = 2.812
+Epoch  88 Batch   22/26   train_loss = 2.715
+Epoch  89 Batch    6/26   train_loss = 2.877
+Epoch  89 Batch   16/26   train_loss = 2.719
+Epoch  90 Batch    0/26   train_loss = 2.641
+Epoch  90 Batch   10/26   train_loss = 2.528
+Epoch  90 Batch   20/26   train_loss = 2.758
+Epoch  91 Batch    4/26   train_loss = 2.652
+Epoch  91 Batch   14/26   train_loss = 2.803
+Epoch  91 Batch   24/26   train_loss = 2.758
+Epoch  92 Batch    8/26   train_loss = 2.713
+Epoch  92 Batch   18/26   train_loss = 2.773
+Epoch  93 Batch    2/26   train_loss = 2.696
+Epoch  93 Batch   12/26   train_loss = 2.810
+Epoch  93 Batch   22/26   train_loss = 2.708
+Epoch  94 Batch    6/26   train_loss = 2.875
+Epoch  94 Batch   16/26   train_loss = 2.714
+Epoch  95 Batch    0/26   train_loss = 2.636
+Epoch  95 Batch   10/26   train_loss = 2.523
+Epoch  95 Batch   20/26   train_loss = 2.754
+Epoch  96 Batch    4/26   train_loss = 2.644
+Epoch  96 Batch   14/26   train_loss = 2.799
+Epoch  96 Batch   24/26   train_loss = 2.753
+Epoch  97 Batch    8/26   train_loss = 2.709
+Epoch  97 Batch   18/26   train_loss = 2.770
+Epoch  98 Batch    2/26   train_loss = 2.692
+Epoch  98 Batch   12/26   train_loss = 2.803
+Epoch  98 Batch   22/26   train_loss = 2.706
+Epoch  99 Batch    6/26   train_loss = 2.871
+Epoch  99 Batch   16/26   train_loss = 2.711
+Epoch 100 Batch    0/26   train_loss = 2.634
+Epoch 100 Batch   10/26   train_loss = 2.521
+Epoch 100 Batch   20/26   train_loss = 2.751
+Epoch 101 Batch    4/26   train_loss = 2.641
+Epoch 101 Batch   14/26   train_loss = 2.797
+Epoch 101 Batch   24/26   train_loss = 2.751
+Epoch 102 Batch    8/26   train_loss = 2.706
+Epoch 102 Batch   18/26   train_loss = 2.768
+Epoch 103 Batch    2/26   train_loss = 2.691
+Epoch 103 Batch   12/26   train_loss = 2.802
+Epoch 103 Batch   22/26   train_loss = 2.704
+Epoch 104 Batch    6/26   train_loss = 2.870
+Epoch 104 Batch   16/26   train_loss = 2.709
+Epoch 105 Batch    0/26   train_loss = 2.632
+Epoch 105 Batch   10/26   train_loss = 2.519
+Epoch 105 Batch   20/26   train_loss = 2.750
+Epoch 106 Batch    4/26   train_loss = 2.640
+Epoch 106 Batch   14/26   train_loss = 2.796
+Epoch 106 Batch   24/26   train_loss = 2.749
+Epoch 107 Batch    8/26   train_loss = 2.705
+Epoch 107 Batch   18/26   train_loss = 2.767
+Epoch 108 Batch    2/26   train_loss = 2.689
+Epoch 108 Batch   12/26   train_loss = 2.801
+Epoch 108 Batch   22/26   train_loss = 2.704
+Epoch 109 Batch    6/26   train_loss = 2.869
+Epoch 109 Batch   16/26   train_loss = 2.708
+Epoch 110 Batch    0/26   train_loss = 2.631
+Epoch 110 Batch   10/26   train_loss = 2.518
+Epoch 110 Batch   20/26   train_loss = 2.749
+Epoch 111 Batch    4/26   train_loss = 2.638
+Epoch 111 Batch   14/26   train_loss = 2.795
+Epoch 111 Batch   24/26   train_loss = 2.749
+Epoch 112 Batch    8/26   train_loss = 2.704
+Epoch 112 Batch   18/26   train_loss = 2.766
+Epoch 113 Batch    2/26   train_loss = 2.689
+Epoch 113 Batch   12/26   train_loss = 2.800
+Epoch 113 Batch   22/26   train_loss = 2.702
+Epoch 114 Batch    6/26   train_loss = 2.867
+Epoch 114 Batch   16/26   train_loss = 2.708
+Epoch 115 Batch    0/26   train_loss = 2.630
+Epoch 115 Batch   10/26   train_loss = 2.517
+Epoch 115 Batch   20/26   train_loss = 2.749
+Epoch 116 Batch    4/26   train_loss = 2.639
+Epoch 116 Batch   14/26   train_loss = 2.794
+Epoch 116 Batch   24/26   train_loss = 2.748
+Epoch 117 Batch    8/26   train_loss = 2.704
+Epoch 117 Batch   18/26   train_loss = 2.766
+Epoch 118 Batch    2/26   train_loss = 2.687
+Epoch 118 Batch   12/26   train_loss = 2.800
+Epoch 118 Batch   22/26   train_loss = 2.702
+Epoch 119 Batch    6/26   train_loss = 2.867
+Epoch 119 Batch   16/26   train_loss = 2.707
+Epoch 120 Batch    0/26   train_loss = 2.630
+Epoch 120 Batch   10/26   train_loss = 2.517
+Epoch 120 Batch   20/26   train_loss = 2.748
+Epoch 121 Batch    4/26   train_loss = 2.637
+Epoch 121 Batch   14/26   train_loss = 2.794
+Epoch 121 Batch   24/26   train_loss = 2.748
+Epoch 122 Batch    8/26   train_loss = 2.703
+Epoch 122 Batch   18/26   train_loss = 2.765
+Epoch 123 Batch    2/26   train_loss = 2.688
+Epoch 123 Batch   12/26   train_loss = 2.799
+Epoch 123 Batch   22/26   train_loss = 2.702
+Epoch 124 Batch    6/26   train_loss = 2.866
+Epoch 124 Batch   16/26   train_loss = 2.707
+Epoch 125 Batch    0/26   train_loss = 2.630
+Epoch 125 Batch   10/26   train_loss = 2.517
+Epoch 125 Batch   20/26   train_loss = 2.748
+Epoch 126 Batch    4/26   train_loss = 2.637
+Epoch 126 Batch   14/26   train_loss = 2.793
+Epoch 126 Batch   24/26   train_loss = 2.747
+Epoch 127 Batch    8/26   train_loss = 2.702
+Epoch 127 Batch   18/26   train_loss = 2.765
 Model Trained and Saved
 </pre>
 </div>
@@ -13000,7 +13074,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13026,7 +13100,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -13065,7 +13139,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">get_tensors</span><span class="p">(</span><span class="n">loaded_graph</span><span class="p">):</span>
@@ -13121,7 +13195,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
@@ -13133,12 +13207,8 @@ Model Trained and Saved
 <span class="sd">    :return: String of the predicted word</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
-    <span class="n">p</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">int_to_vocab</span><span class="p">)):</span>
-        <span class="n">p</span> <span class="o">-=</span> <span class="n">probabilities</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="k">if</span> <span class="n">p</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">int_to_vocab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">int_to_vocab</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">int_to_vocab</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">probabilities</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">int_to_vocab</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
 
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -13180,7 +13250,7 @@ Model Trained and Saved
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">gen_length</span> <span class="o">=</span> <span class="mi">200</span>
@@ -13242,27 +13312,17 @@ Model Trained and Saved
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>INFO:tensorflow:Restoring parameters from ./save
-moe_szyslak: wow, tanked-up assassination this.
-homer_simpson: i didn&#39;t x, tons.(hellhole aunt sneering) you know, if you aerosmith understood: hungry love!
-lenny_leonard: oh, this restless.
-barney_gumble: hey, fallin&#39;-- but i trench penmanship!
-say that&#39;s chug-a-lug. and aggravated...
-carnival.? billboard my gorgeous, somethin&#39; aging starters, the industry, now, who.
-moe_szyslak: don&#39;t diving for startled potato pulls out this and fork statues scientists. hardhat)
-lenny_leonard: homer, bathed in the j
-young_homer: no, indicates bubbles-in-my-nose-y / mistake i gotta beings now&#39;s your midge: you glummy?
-goal? you involved in six-barrel rustlin&#39;.
-quero surprised/thrilled cough kidneys.
-carl_carlson: international infatuation is optimistic there&#39;s no saying ralphie? the liberty&#39;s meaningless deeper.
-moe_szyslak: the road!
-halfway our overstressed. you sick.
-like they lost wangs on the rebuttal!
-
-
-homer_simpson: it tobacky.
-cheryl, frenchman, and ya think.
-woodchucks(miss cheaper progress.
-moe_szyslak:(boxer, marry
+moe_szyslak:(to barney) man, homer. you know what i&#39;m up for the uh, and give him some of you like a day.
+homer_simpson: then, look at me! i just made a little. so you gotta do it!
+moe_szyslak: yeah, all right, but i was gonna say a night.
+carl_carlson: no, i can&#39;t be so... uh... first thing. i have no idea what you do or who can i do.
+moe_szyslak: oh, no, it&#39;s too.&#34; i don&#39;t think so...
+homer_simpson:(to homer) hey, no, don&#39;t get out of you.
+carl_carlson: yeah, three, i, uh, you know what i think it&#39;s&#34; to me!
+moe_szyslak: yeah, i know, i heard of a new.
+barney_gumble: sure thing, so not even this as much. i&#39;m gonna, barney?
+barney_gumble: i think...
+moe_szyslak: oh, homer, look, i gotta check with my uh,..
 </pre>
 </div>
 </div>
